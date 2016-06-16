@@ -91,7 +91,7 @@ function nvli_audio_video_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 18,
+      'weight' => 19,
     ),
   );
 
@@ -211,7 +211,7 @@ function nvli_audio_video_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 18,
+      'weight' => 19,
     ),
   );
 
@@ -411,7 +411,7 @@ function nvli_audio_video_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 16,
+      'weight' => 17,
     ),
   );
 
@@ -488,7 +488,7 @@ function nvli_audio_video_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 15,
+      'weight' => 16,
     ),
   );
 
@@ -583,7 +583,7 @@ function nvli_audio_video_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -638,7 +638,7 @@ function nvli_audio_video_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 
@@ -693,7 +693,7 @@ function nvli_audio_video_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => 20,
+      'weight' => 21,
     ),
   );
 
@@ -733,7 +733,7 @@ function nvli_audio_video_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
@@ -994,7 +994,7 @@ function nvli_audio_video_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 22,
+      'weight' => 23,
     ),
   );
 
@@ -1074,7 +1074,7 @@ function nvli_audio_video_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -1160,7 +1160,7 @@ function nvli_audio_video_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 21,
+      'weight' => 22,
     ),
   );
 
@@ -1200,7 +1200,7 @@ function nvli_audio_video_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 17,
+      'weight' => 18,
     ),
   );
 
@@ -1320,7 +1320,7 @@ function nvli_audio_video_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 11,
+      'weight' => 12,
     ),
   );
 
@@ -1361,6 +1361,46 @@ function nvli_audio_video_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 15,
+    ),
+  );
+
+  // Exported field_instance: 'node-audio_video-field_relation'.
+  $field_instances['node-audio_video-field_relation'] = array(
+    'bundle' => 'audio_video',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 41,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_relation',
+    'label' => 'Relation',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 6,
     ),
   );
 
@@ -1440,7 +1480,7 @@ function nvli_audio_video_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -1600,7 +1640,7 @@ function nvli_audio_video_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -1680,7 +1720,7 @@ function nvli_audio_video_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 14,
+      'weight' => 15,
     ),
   );
 
@@ -1718,6 +1758,7 @@ function nvli_audio_video_field_default_field_instances() {
   t('Playback Equipment Used(Make & Model)');
   t('Publisher');
   t('Recordists');
+  t('Relation');
   t('Remarks');
   t('Rights');
   t('Sampling Frequency');

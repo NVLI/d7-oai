@@ -21,7 +21,7 @@ function nvli_audio_video_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Contributor',
-    'weight' => '12',
+    'weight' => '13',
     'children' => array(
       0 => 'field_artists',
       1 => 'field_accompanying_artists',
@@ -54,7 +54,7 @@ function nvli_audio_video_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Extent',
-    'weight' => '19',
+    'weight' => '20',
     'children' => array(
       0 => 'field_digital_file_size',
       1 => 'field_duration',
@@ -83,7 +83,7 @@ function nvli_audio_video_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Format ',
-    'weight' => '17',
+    'weight' => '18',
     'children' => array(
       0 => 'field_format',
       1 => 'field_codec',
@@ -115,7 +115,7 @@ function nvli_audio_video_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Language',
-    'weight' => '16',
+    'weight' => '17',
     'children' => array(
       0 => 'field_language',
       1 => 'field_dialect',
