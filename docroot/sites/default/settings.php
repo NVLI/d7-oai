@@ -212,6 +212,7 @@
  *   );
  * @endcode
  */
+$databases = array();
 
 /**
  * Access control for update.php script.
@@ -243,7 +244,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = 'PzT-NmmSFy-0wt9-p_zk0_gqXgQMngShSaYYoaWIaEM';
+$drupal_hash_salt = '';
 
 /**
  * Base URL (optional).
@@ -583,3 +584,9 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * Remove the leading hash sign to enable.
  */
 # $conf['theme_debug'] = TRUE;
+
+// Include settings.local.php file for local development.
+// Do not add database credentials in setting.php use settings.local.php.
+if (file_exists(__DIR__ . '/settings.local.php')) {
+  include __DIR__ . '/settings.local.php';
+}
