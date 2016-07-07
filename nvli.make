@@ -58,3 +58,9 @@ projects[nvli_field_bases][download][type] = ""
 projects[nvli_field_bases][download][url] = ""
 projects[nvli_field_bases][type] = "module"
 
+; Please fill the following out. Type may be one of get, git, bzr or svn,
+; and url is the url of the download.
+projects[nvli_museuem][download][type] = ""
+projects[nvli_museuem][download][url] = ""
+projects[nvli_museuem][type] = "module"
+
