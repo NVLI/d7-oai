@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the NVLI Museuem feature.
+ */
+
+include_once 'nvli_museuem.features.inc';
