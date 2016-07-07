@@ -15,7 +15,7 @@ function nvli_audio_video_views_default_views() {
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Audio / Video Content';
+  $view->human_name = 'OAI-PMH Entity End Points';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -155,12 +155,18 @@ function nvli_audio_video_views_default_views() {
 
   /* Display: OAI-PMH */
   $handler = $view->new_display('views_oai_pmh', 'OAI-PMH', 'views_oai_pmh_1');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '100';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'views_oai_pmh_dc';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'dc';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['path'] = 'audio-video-OAI';
+  $handler->display->display_options['path'] = 'av/oai-pmh/request';
   $export['audio_video_content'] = $view;
 
   return $export;
