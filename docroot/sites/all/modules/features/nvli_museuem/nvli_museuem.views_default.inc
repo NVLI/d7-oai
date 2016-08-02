@@ -138,13 +138,7 @@ function nvli_museuem_views_default_views() {
   $handler->display->display_options['fields']['field_type']['field'] = 'field_type';
   $handler->display->display_options['fields']['field_type']['label'] = 'dc:type';
   $handler->display->display_options['fields']['field_type']['hide_empty'] = TRUE;
-  /* Field: Content: Format */
-  $handler->display->display_options['fields']['field_format']['id'] = 'field_format';
-  $handler->display->display_options['fields']['field_format']['table'] = 'field_data_field_format';
-  $handler->display->display_options['fields']['field_format']['field'] = 'field_format';
-  $handler->display->display_options['fields']['field_format']['label'] = 'dc:format';
-  $handler->display->display_options['fields']['field_format']['hide_empty'] = TRUE;
-  /* Field: Content: Image File */
+  /* Field: Content: Image File field */
   $handler->display->display_options['fields']['field_image_file']['id'] = 'field_image_file';
   $handler->display->display_options['fields']['field_image_file']['table'] = 'field_data_field_image_file';
   $handler->display->display_options['fields']['field_image_file']['field'] = 'field_image_file';
@@ -157,6 +151,13 @@ function nvli_museuem_views_default_views() {
   $handler->display->display_options['fields']['field_image_source']['field'] = 'field_image_source';
   $handler->display->display_options['fields']['field_image_source']['label'] = 'dc:source';
   $handler->display->display_options['fields']['field_image_source']['hide_empty'] = TRUE;
+  /* Field: Content: Type */
+  $handler->display->display_options['fields']['type']['id'] = 'type';
+  $handler->display->display_options['fields']['type']['table'] = 'node';
+  $handler->display->display_options['fields']['type']['field'] = 'type';
+  $handler->display->display_options['fields']['type']['label'] = 'dc:format';
+  $handler->display->display_options['fields']['type']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['type']['machine_name'] = TRUE;
   $handler->display->display_options['path'] = 'museums/oai-pmh/request';
   $export['oai_pmh_museums_entity_end_points'] = $view;
 
