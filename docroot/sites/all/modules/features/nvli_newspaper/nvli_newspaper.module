@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the NVLI Newspaper feature.
+ */
+
+include_once 'nvli_newspaper.features.inc';
