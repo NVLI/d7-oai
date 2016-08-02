@@ -128,12 +128,13 @@ function nvli_audio_video_views_default_views() {
   $handler->display->display_options['fields']['field_language']['field'] = 'field_language';
   $handler->display->display_options['fields']['field_language']['label'] = 'dc:language';
   $handler->display->display_options['fields']['field_language']['hide_empty'] = TRUE;
-  /* Field: Content: Format */
-  $handler->display->display_options['fields']['field_format']['id'] = 'field_format';
-  $handler->display->display_options['fields']['field_format']['table'] = 'field_data_field_format';
-  $handler->display->display_options['fields']['field_format']['field'] = 'field_format';
-  $handler->display->display_options['fields']['field_format']['label'] = 'dc:format';
-  $handler->display->display_options['fields']['field_format']['hide_empty'] = TRUE;
+  /* Field: Content: Type */
+  $handler->display->display_options['fields']['type']['id'] = 'type';
+  $handler->display->display_options['fields']['type']['table'] = 'node';
+  $handler->display->display_options['fields']['type']['field'] = 'type';
+  $handler->display->display_options['fields']['type']['label'] = 'dc:format';
+  $handler->display->display_options['fields']['type']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['type']['machine_name'] = TRUE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
