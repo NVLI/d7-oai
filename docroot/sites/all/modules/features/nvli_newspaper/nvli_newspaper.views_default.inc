@@ -120,14 +120,14 @@ function nvli_newspaper_views_default_views() {
   $handler->display->display_options['fields']['field_language']['field'] = 'field_language';
   $handler->display->display_options['fields']['field_language']['label'] = 'dc:language';
   $handler->display->display_options['fields']['field_language']['hide_empty'] = TRUE;
-  /* Field: Content: Alternative */
+  /* Field: Content: City */
   $handler->display->display_options['fields']['field_alternative']['id'] = 'field_alternative';
   $handler->display->display_options['fields']['field_alternative']['table'] = 'field_data_field_alternative';
   $handler->display->display_options['fields']['field_alternative']['field'] = 'field_alternative';
   $handler->display->display_options['fields']['field_alternative']['label'] = 'dc:coverage';
   $handler->display->display_options['fields']['field_alternative']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_alternative']['delta_offset'] = '0';
-  /* Field: Content: Created */
+  /* Field: Content: Date of Publication */
   $handler->display->display_options['fields']['field_created']['id'] = 'field_created';
   $handler->display->display_options['fields']['field_created']['table'] = 'field_data_field_created';
   $handler->display->display_options['fields']['field_created']['field'] = 'field_created';
@@ -141,7 +141,7 @@ function nvli_newspaper_views_default_views() {
     'multiple_to' => '',
     'show_remaining_days' => 0,
   );
-  /* Field: Content: Image File */
+  /* Field: Content: Image File field */
   $handler->display->display_options['fields']['field_image_file']['id'] = 'field_image_file';
   $handler->display->display_options['fields']['field_image_file']['table'] = 'field_data_field_image_file';
   $handler->display->display_options['fields']['field_image_file']['field'] = 'field_image_file';
@@ -154,6 +154,13 @@ function nvli_newspaper_views_default_views() {
   $handler->display->display_options['fields']['field_image_source_1']['field'] = 'field_image_source';
   $handler->display->display_options['fields']['field_image_source_1']['label'] = 'dc:source';
   $handler->display->display_options['fields']['field_image_source_1']['hide_empty'] = TRUE;
+  /* Field: Content: Type */
+  $handler->display->display_options['fields']['type']['id'] = 'type';
+  $handler->display->display_options['fields']['type']['table'] = 'node';
+  $handler->display->display_options['fields']['type']['field'] = 'type';
+  $handler->display->display_options['fields']['type']['label'] = 'dc:format';
+  $handler->display->display_options['fields']['type']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['type']['machine_name'] = TRUE;
   $handler->display->display_options['path'] = 'newspaper/oai-pmh/request';
   $export['oai_pmh_newspaper_entity_end_points'] = $view;
 
